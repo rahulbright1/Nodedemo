@@ -3,8 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
-      - npm install --save && npm run build && npm run test
+      - npm install
+      - npm run build
+      - npm run test
+
 artifacts:
-  files:
-    - "**/*"
+  files: "**/*"
   base-directory: ./
+  name: compiled.zip
